@@ -73,7 +73,7 @@ Run `./dancing-circle-optimizer`. It will output a list with all the
 possible dancing circles, sorted increasingly by score, where a higher score
 means the dancing circle is worse.
 
-Example output:
+*Example output:*
 
 ```
 -eddard-ygritte-joe-sansa-tyrion-brienne-jordan-cersei-george-missandei-fabio-melisandre (2074)
