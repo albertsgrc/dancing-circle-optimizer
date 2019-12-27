@@ -61,6 +61,9 @@ doesNotDance(gregor).
 doesNotDanceBetween(george, eddard, _). % No one can dance between these two men
 ```
 
+You can include your own dancers and restrictions by manually changing this section of
+the source code. It's fairly simple, just follow the same format as the example.
+
 == Building
 
 https://www.swi-prolog.org/[SWI Prolog] must be installed in your system.
