@@ -1,2 +1,74 @@
 = dancing-circle-optimizer
 
+The https://en.wikipedia.org/wiki/Sardana[Sardana] is a popular dance in Catalunya
+where man and woman form a circle and dance while holding their hands. It is often
+the case if there are enough pairs of man `m` and woman `w` that two dancers of the same
+gender cannot be holding hands in the circle, i.e they alternate each other:
+
+```
+                               m   -   w
+                            /             \
+                          w                 m
+                          |                 |
+                          m                 w
+                            \             /
+                               w   -   m 
+```
+
+It is also the case that dancers can dance more confortably if they dance next
+to someone who has a similar height, because when heights are very different the
+dancers have to adopt uncomfortable arm positions and the circle loses aesthetics.
+
+This program accepts a list of man and woman dancers with their respective heights,
+together with a set of restrictions on who can dance next to who, 
+and outputs a list of all the possible dancing circles sorted increasingly by how good they are based on the criteria of height difference minimization.
+
+== Restrictions
+
+The first lines of the file specify the list of dancers, their heights and
+the restrictions on who can dance together, who does not dance, etc.
+
+Example:
+
+```prolog
+men([fabio-174, jordan-176, joe-180, george-171, eddard-172, tyrion-180, gregor-175]).
+women([cersei-165, sansa-171, melisandre-165, brienne-170, margaery-162, ygritte-168, missandei-164]).
+
+% RULE SEMANTICS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% dancesOnRightSide(X, Y) <=> X must dance on the right side of Y
+
+% doesNotDanceOnRightSide(X, Y) <=> X cannot dance on the right side of Y
+% doesNotDance(X, Y) <=> X cannot dance with Y, on any side
+% doesNotDance(X) <=> X does not dance
+
+% doesNotDanceBetween(X, Y, Z) <=> Z cannot dance between X and Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% MANUALLY SPECIFIED CONDITIONS
+dancesOnRightSide(sansa, tyrion).
+
+doesNotDanceOnRightSide(cersei, jordan).
+doesNotDanceOnRightSide(brienne, tyrion).
+doesNotDance(george, brienne).
+doesNotDance(fabio, cersei).
+doesNotDanceOnRightSide(george, cersei).
+
+doesNotDance(margaery).
+doesNotDance(gregor).
+
+doesNotDanceBetween(george, eddard, _). % No one can dance between these two men
+```
+
+== Building
+
+https://www.swi-prolog.org/[SWI Prolog] must be installed in your system.
+
+Run `make` to compile the prolog program.
+
+== Running
+
+Run `./dancing-circle-optimizer`. It will output a list with all the
+possible dancing circles, sorted increasingly by score, where a higher score
+means the dancing circle is worse.

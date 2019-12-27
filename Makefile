@@ -1,7 +1,7 @@
 all: dancing-circle-optimizer
 
-rotllanes: rotllanes.pl
-	swipl -O -q -g main --stand_alone=true -o rotllanes -c rotllanes.pl
+dancing-circle-optimizer: dancing-circle-optimizer.pl
+	swipl -O -q -g main --stand_alone=true -o dancing-circle-optimizer -c dancing-circle-optimizer.pl
 
-rotllanes2: rotllanes2.pl
-	swipl -O -q -g main --stand_alone=true -o rotllanes2 -c rotllanes2.pl
+clean:
+	rm -rf dancing-circle-optimizer
