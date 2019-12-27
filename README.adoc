@@ -72,3 +72,40 @@ Run `make` to compile the prolog program.
 Run `./dancing-circle-optimizer`. It will output a list with all the
 possible dancing circles, sorted increasingly by score, where a higher score
 means the dancing circle is worse.
+
+Example output:
+
+```
+-eddard-ygritte-joe-sansa-tyrion-brienne-jordan-cersei-george-missandei-fabio-melisandre (2074)
+-eddard-ygritte-joe-sansa-tyrion-brienne-jordan-cersei-george-melisandre-fabio-missandei (2076)
+-eddard-brienne-joe-sansa-tyrion-ygritte-jordan-cersei-george-missandei-fabio-melisandre (2090)
+-eddard-brienne-joe-sansa-tyrion-ygritte-jordan-cersei-george-melisandre-fabio-missandei (2092)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-ygritte-george-missandei-fabio-melisandre (2104)
+-george-ygritte-jordan-brienne-joe-sansa-tyrion-cersei-eddard-melisandre-fabio-missandei (2104)
+-eddard-sansa-tyrion-brienne-joe-ygritte-jordan-cersei-george-missandei-fabio-melisandre (2106)
+-george-ygritte-jordan-brienne-joe-sansa-tyrion-cersei-eddard-missandei-fabio-melisandre (2106)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-ygritte-george-melisandre-fabio-missandei (2106)
+-eddard-sansa-tyrion-brienne-joe-ygritte-jordan-cersei-george-melisandre-fabio-missandei (2108)
+-eddard-melisandre-joe-sansa-tyrion-brienne-jordan-cersei-george-missandei-fabio-ygritte (2110)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-melisandre-george-missandei-fabio-ygritte (2110)
+-george-melisandre-jordan-brienne-joe-sansa-tyrion-cersei-eddard-ygritte-fabio-missandei (2110)
+-george-ygritte-jordan-sansa-tyrion-brienne-joe-cersei-eddard-melisandre-fabio-missandei (2112)
+-george-missandei-jordan-brienne-joe-sansa-tyrion-cersei-eddard-ygritte-fabio-melisandre (2114)
+-george-ygritte-jordan-sansa-tyrion-brienne-joe-cersei-eddard-missandei-fabio-melisandre (2114)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-missandei-george-melisandre-fabio-ygritte (2114)
+-george-melisandre-jordan-brienne-joe-sansa-tyrion-cersei-eddard-missandei-fabio-ygritte (2118)
+-eddard-melisandre-joe-sansa-tyrion-brienne-jordan-cersei-george-ygritte-fabio-missandei (2118)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-melisandre-george-ygritte-fabio-missandei (2118)
+-george-melisandre-jordan-sansa-tyrion-brienne-joe-cersei-eddard-ygritte-fabio-missandei (2118)
+-eddard-cersei-joe-sansa-tyrion-brienne-jordan-missandei-george-ygritte-fabio-melisandre (2120)
+-george-missandei-jordan-brienne-joe-sansa-tyrion-cersei-eddard-melisandre-fabio-ygritte (2120)
+-eddard-sansa-tyrion-ygritte-joe-brienne-jordan-cersei-george-missandei-fabio-melisandre (2122)
+-george-missandei-jordan-sansa-tyrion-brienne-joe-cersei-eddard-ygritte-fabio-melisandre (2122)
+-eddard-missandei-joe-sansa-tyrion-brienne-jordan-cersei-george-melisandre-fabio-ygritte (2124)
+-eddard-sansa-tyrion-ygritte-joe-brienne-jordan-cersei-george-melisandre-fabio-missandei (2124)
+-george-melisandre-jordan-sansa-tyrion-brienne-joe-cersei-eddard-missandei-fabio-ygritte (2126)
+-george-missandei-jordan-sansa-tyrion-brienne-joe-cersei-eddard-melisandre-fabio-ygritte (2128)
+.    
+.
+.
+```
