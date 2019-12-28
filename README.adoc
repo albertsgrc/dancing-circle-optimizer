@@ -20,7 +20,7 @@ to someone who has a similar height, because when heights are very different the
 
 This program accepts a list of man and woman dancers with their respective heights,
 together with a set of restrictions on who can dance next to who, 
-and outputs a list of all the possible dancing circles sorted increasingly by how good they are based on the criteria of height difference minimization.
+and outputs a list of all the possible dancing circles sorted decreasingly by how good they are based on the criteria of height difference minimization.
 
 == Restrictions
 
