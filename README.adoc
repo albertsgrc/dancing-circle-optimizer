@@ -15,7 +15,7 @@ gender cannot be holding hands in the circle, i.e they alternate each other:
                                w   -   m 
 ```
 
-It is also the case that dancers can dance more confortably if they dance next
+It is also the case that dancers can dance more comfortably if they dance next
 to someone who has a similar height, because when heights are very different the
 dancers have to adopt uncomfortable arm positions and the circle loses aesthetics.
 
@@ -28,7 +28,7 @@ and outputs a list of all the possible dancing circles sorted increasingly by ho
 The first lines of the file specify the list of dancers, their heights and
 the restrictions on who can dance together, who does not dance, etc.
 
-Example:
+*Example:*
 
 ```prolog
 men([fabio-174, jordan-176, joe-180, george-171, eddard-172, tyrion-180, gregor-175]).
