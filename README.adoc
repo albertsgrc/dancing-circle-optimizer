@@ -1,9 +1,7 @@
 = dancing-circle-optimizer
 
 The https://en.wikipedia.org/wiki/Sardana[Sardana] is a popular dance in Catalunya
-where man and woman form a circle and dance while holding their hands. It is often
-the case if there are enough pairs of man `m` and woman `w` that two dancers of the same
-gender cannot be holding hands in the circle, i.e they alternate each other:
+where men and women form a circle and dance while holding their hands. Commonly, if there are enough pairs of men `m` and women `w`, two dancers of the same gender do not hold hands in the circle, i.e they alternate each other:
 
 ```
                                m   -   w
