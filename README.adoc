@@ -22,7 +22,7 @@ and outputs a list of all the possible dancing circles sorted decreasingly by ho
 
 == Restrictions
 
-The first lines of the file specify the list of dancers, their heights and
+The first lines of the `dancing-circle-optimizer.pl` source file specify the list of dancers, their heights and
 the restrictions on who can dance together, who does not dance, etc.
 
 *Example:*
@@ -59,7 +59,7 @@ doesNotDanceBetween(george, eddard, _). % No one can dance between these two men
 ```
 
 You can include your own dancers and restrictions by manually changing this section of
-the source code. It's fairly simple, just follow the same format as the example.
+the source code, just follow the same definition format as the example.
 
 == Building
 
