@@ -4,13 +4,13 @@ The https://en.wikipedia.org/wiki/Sardana[Sardana] is a popular dance in Catalun
 where men and women form a circle and dance while holding their hands. Commonly, if there are enough pairs of men `m` and women `w`, two dancers of the same gender do not hold hands in the circle, i.e they alternate each other:
 
 ```
-                               m   -   w
-                            /             \
-                          w                 m
-                          |                 |
-                          m                 w
-                            \             /
-                               w   -   m 
+                               m  -  w
+                            /           \
+                          w               m
+                          |               |
+                          m               w
+                            \           /
+                               w  -  m 
 ```
 
 It is also the case that dancers dance more comfortably next
